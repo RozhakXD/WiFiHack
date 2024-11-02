@@ -20,9 +20,9 @@ WiFiHack is a simple brute-force tool to attempt finding WiFi passwords using th
 Make sure you have the SSID of the target WiFi network and a text file containing a list of potential passwords.
 2. **Run the Program**
 Open Windows PowerShell, navigate to the project folder, and run:
-```bash
-python Run.py
-```
+    ```bash
+    python Run.py
+    ```
 3. **Input Required Data**
 When prompted, enter the WiFi network name (SSID) and the path to your password list file.
 4. **Monitor the Process**
@@ -32,11 +32,11 @@ The brute-force process will start, displaying each attempt. You can stop the pr
 ![WiFiHack_20241103](https://github.com/user-attachments/assets/b2063168-3068-47e5-a840-988730e410fd)
 
 ## 🛠 Troubleshooting
+- Open the password file and verify it contains valid passwords, one per line. Remove any blank lines or entries that are too short (under five characters).
 - This usually means that the password list provided does not contain the correct password. Try using a more comprehensive or updated password list.
 - Ensure that the password file is in the same folder as the program and that the file path is correct. Also, check that the file has read permissions.
-- Open the password file and verify it contains valid passwords, one per line. Remove any blank lines or entries that are too short (under five characters).
 - WiFiHack requires direct hardware access, which is limited in WSL. To resolve this, run the tool in *Windows PowerShell* or *Command Prompt* on Windows.
-- A slow brute-force process can result from a large password list or limited system resources. Try using a more optimized password list and make sure your system has enough resources to support multithreading.
+- A slow brute-force process may be due to a large password list or limited system resources. Try a smaller, optimized password list and ensure your system can handle multithreading.
 - If the program is interrupted mid-attempt, success and failure counts may be inaccurate. Restart the program and let it run uninterrupted for accurate results.
 
 ## ❤️ Support Me
