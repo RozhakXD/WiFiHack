@@ -1,7 +1,7 @@
 # WiFiHack - WiFi Hacking Simulator
 ![WiFiHack](https://github.com/user-attachments/assets/63fc751e-6fca-4647-8e95-ed60c691495c)
 
-WiFiHack is a simple brute-force tool to attempt finding WiFi passwords using the PyWiFi library in Python. With a password list, this tool systematically attempts each entry to gain access to the targeted WiFi network.
+**WiFiHack** is a straightforward brute-force tool designed to help users attempt to find WiFi passwords by leveraging the PyWiFi library in Python. Using a password list, WiFiHack tries each password systematically to connect to the specified WiFi network and gain access if the correct password is found.
 
 > **Disclaimer**: This tool is intended solely for educational purposes on personal WiFi networks. Do not use this tool on networks you do not have permission to access.
 
@@ -33,10 +33,10 @@ The brute-force process will start, displaying each attempt. You can stop the pr
 
 ## 🛠 Troubleshooting
 - Open the password file and verify it contains valid passwords, one per line. Remove any blank lines or entries that are too short (under five characters).
+- A slow brute-force process may be due to a large password list or limited system resources. Try a smaller, optimized password list and ensure your system can handle multithreading.
 - This usually means that the password list provided does not contain the correct password. Try using a more comprehensive or updated password list.
 - Ensure that the password file is in the same folder as the program and that the file path is correct. Also, check that the file has read permissions.
 - WiFiHack requires direct hardware access, which is limited in WSL. To resolve this, run the tool in *Windows PowerShell* or *Command Prompt* on Windows.
-- A slow brute-force process may be due to a large password list or limited system resources. Try a smaller, optimized password list and ensure your system can handle multithreading.
 - If the program is interrupted mid-attempt, success and failure counts may be inaccurate. Restart the program and let it run uninterrupted for accurate results.
 
 ## ❤️ Support Me
